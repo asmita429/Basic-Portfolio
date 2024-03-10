@@ -2,11 +2,11 @@
 
 :root {
   --primary-color: #a855f7;
-  --primary-color-dark: #9333ea;
+  --primary-color-dark: #a65bec;
   --secondary-color: #ca8a04;
   --text-dark: #1f2937;
   --text-light: #6b7280;
-  --extra-light: #ffd0ef;
+  --extra-light: #f5b4f8;
   --max-width: 1200px;
 }
 
@@ -106,6 +106,13 @@ ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.achievements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color:#e938c0;
 }
 
 .subtitle {
