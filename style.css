@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
-  --primary-color: #a855f7;
-  --primary-color-dark: #a65bec;
-  --secondary-color: #ca8a04;
+  --primary-color: #67729D;
+  --primary-color-dark: #FED9ED;
+  --secondary-color: #FED9ED;
   --text-dark: #1f2937;
   --text-light: #6b7280;
-  --extra-light: #f5b4f8;
+  --extra-light: #E7BCDE;
   --max-width: 1200px;
 }
 
@@ -14,6 +14,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -29,7 +33,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #67729D;
   z-index: 99;
 }
 
@@ -45,11 +49,11 @@ nav {
 nav .logo a {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: black;
   transition: 0.3s;
 }
 nav .logo a:hover {
-  color: var(--primary-color-dark);
+  color: #FED9ED;
 }
 
 nav .checkbox {
@@ -88,12 +92,28 @@ ul li a:hover {
   color: var(--secondary-color);
 }
 
+
 .section {
   background-color: var(--extra-light);
+  position: relative;
+  top: 5rem;
+}
+
+.line {
+  /* background-color: #ee7ffc; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.3rem;
+
+}
+
+.line h3{
+  padding-top: 20px;
 }
 
 .section__container {
-  min-height: 100vh;
+  min-height: 80vh;
   max-width: var(--max-width);
   margin: auto;
   padding: 1rem;
@@ -108,11 +128,28 @@ ul li a:hover {
   justify-content: center;
 }
 
+.box {
+  height: 18rem;
+  width: 15rem;
+  padding: 1rem;
+  border: 2px solid var(--primary-color-dark);
+  border-radius: 1rem;
+  text-align:justify ;
+}
+
+.box:hover {
+  background-color: var(--primary-color-dark);
+}
+.education {
+  min-height: 100vh;
+  background-color: #FED9ED;
+}
+
 .achievements {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color:#e938c0;
+  color: #d630a7;
 }
 
 .subtitle {
@@ -223,4 +260,24 @@ ul li a:hover {
   .action__btns {
     margin: auto;
   }
+}
+
+div a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer {
+  height: 5rem;
+  background-color: #BB9CC0;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  padding-left: 4rem;
+}
+
+.center {
+  text-align: center;
 }
